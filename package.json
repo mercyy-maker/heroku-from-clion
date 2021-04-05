@@ -2,9 +2,19 @@
   "name": "heroku-from-clion",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
+  "engines": {
+    "node": "12.x"
+
   },
+  "main": "./bin/www",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo NO TEST && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "heroku"
+  ],
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
